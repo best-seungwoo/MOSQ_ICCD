@@ -1,3 +1,5 @@
+python==3.8
+
 (create a python venv)
 
 python3 -m venv MOSQ_venv
@@ -7,12 +9,15 @@ pip install qiskit-aer==0.15.0
 pip install qiskit-algorithms==0.3.0
 pip install qiskit-nature==0.7.2
 pip install conan==1.64.0
+pip install scikit-build==0.18.0
+pip install pybind11==2.13.5
 
 (move to the working directory)
 cd MOSQ_working
 mkdir data
 
 (CMakeCache error)
+rm -rf ../qiskit-aer/_skbuild/linux-x86_64-3.8/cmake-build/CMakeCache.txt
 rm -rf ../qiskit-aer/build
 mkdir ../qiskit-aer/build
 

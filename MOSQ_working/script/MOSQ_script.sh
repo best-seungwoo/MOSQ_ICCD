@@ -2,6 +2,7 @@ output_DIR="./data/"
 MOSQ_src_DIR="../src_code_MOSQ/"
 cpp_src_DIR="../qiskit-aer/src/"
 py_src_DIR="../MOSQ_venv/lib/python3.8/site-packages/qiskit_aer/"
+mkdir ../qiskit-aer/build
 
 #copy MOSQ source codes
 cp ${MOSQ_src_DIR}_cobyla_py.py ${py_src_DIR}../scipy/optimize/
@@ -66,9 +67,9 @@ pip install dist/*.whl
 cd ../MOSQ_working
 
 cp ${MOSQ_src_DIR}aer_compiler.py ${py_src_DIR}backends/
-cp ${MOSQ_src_DIR}estimator_v2.py ${py_src_DIR}primitives/
+cp ${MOSQ_src_DIR}estimator_v2_MOSQ_CR.py ${py_src_DIR}primitives/estimator_v2.py
 
-for molecule in NH3 #C2H6 #H2 LiH BeH2 NH3 CH4 LiF MgH2 N2H2 CH3N C2H4 CO2 C2H6
+for molecule in NH3 #H2 LiH BeH2 NH3 CH4 LiF MgH2 N2H2 CH3N C2H4 CO2 C2H6
 do
     echo "MOSQ" > "${output_DIR}MOSQ_${molecule}.txt"
     python3 ./code/MOSQ.py $molecule >> "${output_DIR}MOSQ_${molecule}.txt"
