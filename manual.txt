@@ -1,0 +1,16 @@
+(create a python venv)
+
+python3 -m venv MOSQ_venv
+source MOSQ_venv/bin/activate
+pip install qiskit==1.1.0
+pip install qiskit-aer==0.15.0
+pip install qiskit-algorithms==0.3.0
+pip install qiskit-nature==0.7.2
+pip install conan==1.64.0
+
+(CMakeCache error)
+rm -rf ../qiskit-aer/build
+mkdir ../qiskit-aer/build
+
+(BLAS error)
+sudo apt-get install libopenblas-dev liblapack-dev
