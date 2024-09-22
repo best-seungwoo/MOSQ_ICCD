@@ -1,3 +1,4 @@
 MOSQ_venv/
 MOSQ_working/data/
 temp/
+qiskit-aer/build/

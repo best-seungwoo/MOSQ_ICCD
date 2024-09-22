@@ -575,8 +575,6 @@ bool DiagonalFusion::is_diagonal_op(const op_t &op) const {
 int DiagonalFusion::get_next_diagonal_end(
     const oplist_t &ops, const int from, const int end,
     std::set<uint_t> &fusing_qubits) const {
-  //SW
-  return -1;
 
   if (is_diagonal_op(ops[from])) {
     for (const auto qubit : ops[from].qubits)
@@ -832,8 +830,8 @@ void Fusion::set_config(const Config &config) {
   if (config.fusion_threshold.has_value())
     threshold = config.fusion_threshold.value();
 
-  // for (std::shared_ptr<Fuser> &fuser : fusers)
-  //   fuser->set_config(config);
+  for (std::shared_ptr<Fuser> &fuser : fusers)
+    fuser->set_config(config);
 
   if (config.fusion_allow_kraus.has_value())
     allow_kraus = config.fusion_allow_kraus.value();
@@ -843,11 +841,6 @@ void Fusion::set_config(const Config &config) {
 
   if (config.fusion_parallelization_threshold.has_value())
     parallel_threshold_ = config.fusion_parallelization_threshold.value();
-
-  //SW
-  active = false;
-  max_qubit = 0;
-  threshold = 0;
 }
 
 void Fusion::optimize_circuit(Circuit &circ, Noise::NoiseModel &noise,
@@ -859,99 +852,94 @@ void Fusion::optimize_circuit(Circuit &circ, Noise::NoiseModel &noise,
   dump(circ);
 #endif
 
-  //SW
-  //skip fusion
-  result.metadata.add(false, "fusion", "enabled");
-  return;
+  // Start timer
+  using clock_t = std::chrono::high_resolution_clock;
+  auto timer_start = clock_t::now();
 
-  // // Start timer
-  // using clock_t = std::chrono::high_resolution_clock;
-  // auto timer_start = clock_t::now();
+  // Check if fusion should be skipped
+  if (!active || !allowed_opset.contains(optype_t::matrix)) {
+    result.metadata.add(false, "fusion", "enabled");
+    return;
+  }
 
-  // // Check if fusion should be skipped
-  // if (!active || !allowed_opset.contains(optype_t::matrix)) {
-  //   result.metadata.add(false, "fusion", "enabled");
-  //   return;
-  // }
+  result.metadata.add(true, "fusion", "enabled");
+  result.metadata.add(threshold, "fusion", "threshold");
+  result.metadata.add(max_qubit, "fusion", "max_fused_qubits");
 
-//   result.metadata.add(true, "fusion", "enabled");
-//   result.metadata.add(threshold, "fusion", "threshold");
-//   result.metadata.add(max_qubit, "fusion", "max_fused_qubits");
+  // Check qubit threshold
+  if (circ.num_qubits <= threshold || circ.ops.size() < 2) {
+    result.metadata.add(false, "fusion", "applied");
+    return;
+  }
 
-//   // Check qubit threshold
-//   if (circ.num_qubits <= threshold || circ.ops.size() < 2) {
-//     result.metadata.add(false, "fusion", "applied");
-//     return;
-//   }
+  // Determine fusion method
+  FusionMethod &method = FusionMethod::find_method(circ, allowed_opset,
+                                                   allow_superop, allow_kraus);
+  result.metadata.add(method.name(), "fusion", "method");
 
-//   // Determine fusion method
-//   FusionMethod &method = FusionMethod::find_method(circ, allowed_opset,
-//                                                    allow_superop, allow_kraus);
-//   result.metadata.add(method.name(), "fusion", "method");
+  method.set_num_params(circ.num_bind_params);
 
-//   method.set_num_params(circ.num_bind_params);
+  bool applied = false;
+  for (const std::shared_ptr<Fuser> &fuser : fusers) {
+    fuser->set_metadata(result);
 
-//   bool applied = false;
-//   for (const std::shared_ptr<Fuser> &fuser : fusers) {
-//     fuser->set_metadata(result);
+    if (circ.ops.size() < parallel_threshold_ || parallelization_ <= 1) {
+      optimize_circuit(circ, noise, allowed_opset, 0, circ.ops.size(), fuser,
+                       method);
+      result.metadata.add(1, "fusion", "parallelization");
+    } else {
+      // determine unit for each OMP thread
+      int_t unit = circ.ops.size() / parallelization_;
+      if (circ.ops.size() % parallelization_)
+        ++unit;
 
-//     if (circ.ops.size() < parallel_threshold_ || parallelization_ <= 1) {
-//       optimize_circuit(circ, noise, allowed_opset, 0, circ.ops.size(), fuser,
-//                        method);
-//       result.metadata.add(1, "fusion", "parallelization");
-//     } else {
-//       // determine unit for each OMP thread
-//       int_t unit = circ.ops.size() / parallelization_;
-//       if (circ.ops.size() % parallelization_)
-//         ++unit;
+      if (parallelization_ > 1) {
+#pragma omp parallel for num_threads(parallelization_)
+        for (int_t i = 0; i < (int_t)parallelization_; i++) {
+          int_t start = unit * i;
+          int_t end = std::min(start + unit, (int_t)circ.ops.size());
+          optimize_circuit(circ, noise, allowed_opset, start, end, fuser,
+                           method);
+        }
+      } else {
+        for (uint_t i = 0; i < parallelization_; i++) {
+          int_t start = unit * i;
+          int_t end = std::min(start + unit, (int_t)circ.ops.size());
+          optimize_circuit(circ, noise, allowed_opset, start, end, fuser,
+                           method);
+        }
+      }
+      result.metadata.add(parallelization_, "fusion", "parallelization");
+    }
 
-//       if (parallelization_ > 1) {
-// #pragma omp parallel for num_threads(parallelization_)
-//         for (int_t i = 0; i < (int_t)parallelization_; i++) {
-//           int_t start = unit * i;
-//           int_t end = std::min(start + unit, (int_t)circ.ops.size());
-//           optimize_circuit(circ, noise, allowed_opset, start, end, fuser,
-//                            method);
-//         }
-//       } else {
-//         for (uint_t i = 0; i < parallelization_; i++) {
-//           int_t start = unit * i;
-//           int_t end = std::min(start + unit, (int_t)circ.ops.size());
-//           optimize_circuit(circ, noise, allowed_opset, start, end, fuser,
-//                            method);
-//         }
-//       }
-//       result.metadata.add(parallelization_, "fusion", "parallelization");
-//     }
+    size_t idx = 0;
+    for (size_t i = 0; i < circ.ops.size(); ++i) {
+      if (circ.ops[i].type != optype_t::nop) {
+        if (i != idx)
+          circ.ops[idx] = circ.ops[i];
+        ++idx;
+      }
+    }
 
-//     size_t idx = 0;
-//     for (size_t i = 0; i < circ.ops.size(); ++i) {
-//       if (circ.ops[i].type != optype_t::nop) {
-//         if (i != idx)
-//           circ.ops[idx] = circ.ops[i];
-//         ++idx;
-//       }
-//     }
+    if (idx != circ.ops.size()) {
+      applied = true;
+      circ.ops.erase(circ.ops.begin() + idx, circ.ops.end());
+      circ.set_params();
+    }
 
-//     if (idx != circ.ops.size()) {
-//       applied = true;
-//       circ.ops.erase(circ.ops.begin() + idx, circ.ops.end());
-//       circ.set_params();
-//     }
+#ifdef DEBUG
+    std::cout << fuser->name() << std::endl;
+    dump(circ);
+#endif
+  }
+  result.metadata.add(applied, "fusion", "applied");
+  if (applied && verbose)
+    result.metadata.add(circ.ops, "fusion", "output_ops");
 
-// #ifdef DEBUG
-//     std::cout << fuser->name() << std::endl;
-//     dump(circ);
-// #endif
-//   }
-//   result.metadata.add(applied, "fusion", "applied");
-//   if (applied && verbose)
-//     result.metadata.add(circ.ops, "fusion", "output_ops");
-
-//   auto timer_stop = clock_t::now();
-//   result.metadata.add(
-//       std::chrono::duration<double>(timer_stop - timer_start).count(), "fusion",
-//       "time_taken");
+  auto timer_stop = clock_t::now();
+  result.metadata.add(
+      std::chrono::duration<double>(timer_stop - timer_start).count(), "fusion",
+      "time_taken");
 }
 
 void Fusion::optimize_circuit(Circuit &circ, const Noise::NoiseModel &noise,

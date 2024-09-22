@@ -8,6 +8,10 @@ pip install qiskit-algorithms==0.3.0
 pip install qiskit-nature==0.7.2
 pip install conan==1.64.0
 
+(move to the working directory)
+cd MOSQ_working
+mkdir data
+
 (CMakeCache error)
 rm -rf ../qiskit-aer/build
 mkdir ../qiskit-aer/build

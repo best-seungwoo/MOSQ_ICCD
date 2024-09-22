@@ -7287,3 +7287,711 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:117 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03272/fast && /usr/bin/make  -f CMakeFiles/cmTC_03272.dir/build.make CMakeFiles/cmTC_03272.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe'
+        Building CXX object CMakeFiles/cmTC_03272.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -o CMakeFiles/cmTC_03272.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe/src.cxx
+        Linking CXX executable cmTC_03272
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03272.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_03272.dir/src.cxx.o -o cmTC_03272 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-irkVYe'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:118 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb093/fast && /usr/bin/make  -f CMakeFiles/cmTC_fb093.dir/build.make CMakeFiles/cmTC_fb093.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e'
+        Building CXX object CMakeFiles/cmTC_fb093.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic    -Wall -o CMakeFiles/cmTC_fb093.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e/src.cxx
+        Linking CXX executable cmTC_fb093
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb093.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic  CMakeFiles/cmTC_fb093.dir/src.cxx.o -o cmTC_fb093 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-m28D3e'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:119 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fe136/fast && /usr/bin/make  -f CMakeFiles/cmTC_fe136.dir/build.make CMakeFiles/cmTC_fe136.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc'
+        Building CXX object CMakeFiles/cmTC_fe136.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall    -Wfloat-equal -o CMakeFiles/cmTC_fe136.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc/src.cxx
+        Linking CXX executable cmTC_fe136
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe136.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall  CMakeFiles/cmTC_fe136.dir/src.cxx.o -o cmTC_fe136 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-6EjuQc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:120 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_45ddb/fast && /usr/bin/make  -f CMakeFiles/cmTC_45ddb.dir/build.make CMakeFiles/cmTC_45ddb.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf'
+        Building CXX object CMakeFiles/cmTC_45ddb.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal    -Wundef -o CMakeFiles/cmTC_45ddb.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf/src.cxx
+        Linking CXX executable cmTC_45ddb
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45ddb.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal  CMakeFiles/cmTC_45ddb.dir/src.cxx.o -o cmTC_45ddb 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-7w3mCf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:121 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ff814/fast && /usr/bin/make  -f CMakeFiles/cmTC_ff814.dir/build.make CMakeFiles/cmTC_ff814.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf'
+        Building CXX object CMakeFiles/cmTC_ff814.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef    -Wcast-align -o CMakeFiles/cmTC_ff814.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf/src.cxx
+        Linking CXX executable cmTC_ff814
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff814.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef  CMakeFiles/cmTC_ff814.dir/src.cxx.o -o cmTC_ff814 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-uBnEWf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:122 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b7c9/fast && /usr/bin/make  -f CMakeFiles/cmTC_1b7c9.dir/build.make CMakeFiles/cmTC_1b7c9.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd'
+        Building CXX object CMakeFiles/cmTC_1b7c9.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align    -Wwrite-strings -o CMakeFiles/cmTC_1b7c9.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd/src.cxx
+        Linking CXX executable cmTC_1b7c9
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b7c9.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align  CMakeFiles/cmTC_1b7c9.dir/src.cxx.o -o cmTC_1b7c9 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-MpOkrd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:123 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_21f71/fast && /usr/bin/make  -f CMakeFiles/cmTC_21f71.dir/build.make CMakeFiles/cmTC_21f71.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc'
+        Building CXX object CMakeFiles/cmTC_21f71.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings    -Wmissing-declarations -o CMakeFiles/cmTC_21f71.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc/src.cxx
+        Linking CXX executable cmTC_21f71
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21f71.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings  CMakeFiles/cmTC_21f71.dir/src.cxx.o -o cmTC_21f71 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3EHVYc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:124 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_abc65/fast && /usr/bin/make  -f CMakeFiles/cmTC_abc65.dir/build.make CMakeFiles/cmTC_abc65.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf'
+        Building CXX object CMakeFiles/cmTC_abc65.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations    -Wredundant-decls -o CMakeFiles/cmTC_abc65.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf/src.cxx
+        Linking CXX executable cmTC_abc65
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abc65.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations  CMakeFiles/cmTC_abc65.dir/src.cxx.o -o cmTC_abc65 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-B5uWDf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:125 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3ca33/fast && /usr/bin/make  -f CMakeFiles/cmTC_3ca33.dir/build.make CMakeFiles/cmTC_3ca33.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId'
+        Building CXX object CMakeFiles/cmTC_3ca33.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls    -Wshadow -o CMakeFiles/cmTC_3ca33.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId/src.cxx
+        Linking CXX executable cmTC_3ca33
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ca33.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls  CMakeFiles/cmTC_3ca33.dir/src.cxx.o -o cmTC_3ca33 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-XGjjId'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:126 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_49703/fast && /usr/bin/make  -f CMakeFiles/cmTC_49703.dir/build.make CMakeFiles/cmTC_49703.dir/build
+        make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc'
+        Building CXX object CMakeFiles/cmTC_49703.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow    -Woverloaded-virtual -o CMakeFiles/cmTC_49703.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc/src.cxx
+        Linking CXX executable cmTC_49703
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49703.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow  CMakeFiles/cmTC_49703.dir/src.cxx.o -o cmTC_49703 
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-AD1rnc'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:117 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bb25f/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu'
+        /usr/bin/make  -f CMakeFiles/cmTC_bb25f.dir/build.make CMakeFiles/cmTC_bb25f.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu'
+        Building CXX object CMakeFiles/cmTC_bb25f.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -o CMakeFiles/cmTC_bb25f.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu/src.cxx
+        Linking CXX executable cmTC_bb25f
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb25f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_bb25f.dir/src.cxx.o -o cmTC_bb25f 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-yTmwlu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:118 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8bd05/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u'
+        /usr/bin/make  -f CMakeFiles/cmTC_8bd05.dir/build.make CMakeFiles/cmTC_8bd05.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u'
+        Building CXX object CMakeFiles/cmTC_8bd05.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic    -Wall -o CMakeFiles/cmTC_8bd05.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u/src.cxx
+        Linking CXX executable cmTC_8bd05
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bd05.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic  CMakeFiles/cmTC_8bd05.dir/src.cxx.o -o cmTC_8bd05 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-3Mps8u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:119 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e817b/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr'
+        /usr/bin/make  -f CMakeFiles/cmTC_e817b.dir/build.make CMakeFiles/cmTC_e817b.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr'
+        Building CXX object CMakeFiles/cmTC_e817b.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall    -Wfloat-equal -o CMakeFiles/cmTC_e817b.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr/src.cxx
+        Linking CXX executable cmTC_e817b
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e817b.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall  CMakeFiles/cmTC_e817b.dir/src.cxx.o -o cmTC_e817b 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5FnyPr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:120 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cfdc8/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs'
+        /usr/bin/make  -f CMakeFiles/cmTC_cfdc8.dir/build.make CMakeFiles/cmTC_cfdc8.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs'
+        Building CXX object CMakeFiles/cmTC_cfdc8.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal    -Wundef -o CMakeFiles/cmTC_cfdc8.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs/src.cxx
+        Linking CXX executable cmTC_cfdc8
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfdc8.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal  CMakeFiles/cmTC_cfdc8.dir/src.cxx.o -o cmTC_cfdc8 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-NUZXfs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:121 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e5c60/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu'
+        /usr/bin/make  -f CMakeFiles/cmTC_e5c60.dir/build.make CMakeFiles/cmTC_e5c60.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu'
+        Building CXX object CMakeFiles/cmTC_e5c60.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef    -Wcast-align -o CMakeFiles/cmTC_e5c60.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu/src.cxx
+        Linking CXX executable cmTC_e5c60
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5c60.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef  CMakeFiles/cmTC_e5c60.dir/src.cxx.o -o cmTC_e5c60 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-8ESgQu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:122 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec2be/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir'
+        /usr/bin/make  -f CMakeFiles/cmTC_ec2be.dir/build.make CMakeFiles/cmTC_ec2be.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir'
+        Building CXX object CMakeFiles/cmTC_ec2be.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align    -Wwrite-strings -o CMakeFiles/cmTC_ec2be.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir/src.cxx
+        Linking CXX executable cmTC_ec2be
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec2be.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align  CMakeFiles/cmTC_ec2be.dir/src.cxx.o -o cmTC_ec2be 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-Ro1Vir'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:123 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fe0ba/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv'
+        /usr/bin/make  -f CMakeFiles/cmTC_fe0ba.dir/build.make CMakeFiles/cmTC_fe0ba.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv'
+        Building CXX object CMakeFiles/cmTC_fe0ba.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings    -Wmissing-declarations -o CMakeFiles/cmTC_fe0ba.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv/src.cxx
+        Linking CXX executable cmTC_fe0ba
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe0ba.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings  CMakeFiles/cmTC_fe0ba.dir/src.cxx.o -o cmTC_fe0ba 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-1D7Krv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:124 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b656a/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs'
+        /usr/bin/make  -f CMakeFiles/cmTC_b656a.dir/build.make CMakeFiles/cmTC_b656a.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs'
+        Building CXX object CMakeFiles/cmTC_b656a.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations    -Wredundant-decls -o CMakeFiles/cmTC_b656a.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs/src.cxx
+        Linking CXX executable cmTC_b656a
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b656a.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations  CMakeFiles/cmTC_b656a.dir/src.cxx.o -o cmTC_b656a 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-awhnZs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:125 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac9c4/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r'
+        /usr/bin/make  -f CMakeFiles/cmTC_ac9c4.dir/build.make CMakeFiles/cmTC_ac9c4.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r'
+        Building CXX object CMakeFiles/cmTC_ac9c4.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls    -Wshadow -o CMakeFiles/cmTC_ac9c4.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r/src.cxx
+        Linking CXX executable cmTC_ac9c4
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac9c4.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls  CMakeFiles/cmTC_ac9c4.dir/src.cxx.o -o cmTC_ac9c4 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-K3216r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/compiler_utils.cmake:17 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:126 (enable_cxx_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test flag_supported"
+    directories:
+      source: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr"
+      binary: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/seungwoo/MOSQ_ICCD/qiskit-aer/cmake"
+    buildResult:
+      variable: "flag_supported"
+      cached: true
+      stdout: |
+        Change Dir: /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr
+        
+        Run Build Command(s):/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_19690/fast && make[1]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr'
+        /usr/bin/make  -f CMakeFiles/cmTC_19690.dir/build.make CMakeFiles/cmTC_19690.dir/build
+        make[2]: Entering directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr'
+        Building CXX object CMakeFiles/cmTC_19690.dir/src.cxx.o
+        /usr/bin/c++ -Dflag_supported  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow    -Woverloaded-virtual -o CMakeFiles/cmTC_19690.dir/src.cxx.o -c /home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr/src.cxx
+        Linking CXX executable cmTC_19690
+        /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19690.dir/link.txt --verbose=1
+        /usr/bin/c++  -pedantic -Wall -Wfloat-equal -Wundef -Wcast-align -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wshadow  CMakeFiles/cmTC_19690.dir/src.cxx.o -o cmTC_19690 
+        make[2]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr'
+        make[1]: Leaving directory '/home/seungwoo/MOSQ_ICCD/qiskit-aer/build/CMakeFiles/CMakeScratch/TryCompile-5C3xCr'
+        
+      exitCode: 0
+...

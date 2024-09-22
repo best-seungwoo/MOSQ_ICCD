@@ -395,8 +395,6 @@ BLAS_acml_LIBRARY-ADVANCED:INTERNAL=1
 BLAS_acml_mp_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_blas_LIBRARY
 BLAS_blas_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BLAS_blas_WORKS
-BLAS_blas_WORKS-ADVANCED:INTERNAL=1
 //Have function sgemm_
 BLAS_blas_WORKS:INTERNAL=1
 //ADVANCED property for variable: BLAS_blis_LIBRARY
